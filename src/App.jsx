@@ -18,7 +18,7 @@ export default function App() {
     localStorage.removeItem('user');
     localStorage.removeItem('team');
     setIsLoggedIn(false);
-    window.location.href = '/login'; // Force reload to clear all states across components
+    window.location.href = '/'; // Force reload to clear all states across components
   };
 
   return (
