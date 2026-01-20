@@ -60,7 +60,7 @@ export function WorldSelection({ onSelectWorld, lockedWorld, otherTeamWorld, isL
             )}
             {!isLoggedIn && (
               <span className="block mt-4 text-red-500 font-bold animate-pulse">
-                SYSTEM LOCKED: AUTHENTICATION REQUIRED TO ACCESS PORTALS
+                SYSTEM LOCKED: LOGIN REQUIRED. UNIDENTIFIED PERSONNEL DETECTED.
               </span>
             )}
           </p>
@@ -131,7 +131,7 @@ export function WorldSelection({ onSelectWorld, lockedWorld, otherTeamWorld, isL
                         <Lock className="w-8 h-8 text-[var(--ash-darker)]" />
                       </div>
                       <p className="text-sm text-[var(--ash-darker)] font-bold uppercase">
-                        {isLoggedIn ? 'Gateway Sealed' : 'Authentication Required'}
+                        {isLoggedIn ? 'Gateway Sealed' : 'Login Required: Verify Clearance'}
                       </p>
                     </div>
                   )}
